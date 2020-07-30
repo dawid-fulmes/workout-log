@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "workout-log"
+    }
+  },
+  "defaultProject": "workout-log",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
