@@ -1,5 +1,6 @@
-import { ExerciseComponent } from './exercise/exercise.component';
+import { ExercisesBrowserComponent } from './exercises-browser/exercises-browser.component';
+import { ExerciseOverviewComponent } from './exercise-overview/exercise-overview.component';
 
-const containers = [ExerciseComponent];
+const containers = [ExercisesBrowserComponent, ExerciseOverviewComponent];
 
-export { containers, ExerciseComponent };
+export { containers, ExercisesBrowserComponent, ExerciseOverviewComponent };

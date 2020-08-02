@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { ExerciseRoutingModule } from './exercise-routing.module';
 import { containers } from './containers';
+import { SharedModule } from '@app/shared/shared.module';
 
 @NgModule({
   declarations: [...containers],
-  imports: [CommonModule, ExerciseRoutingModule],
+  imports: [SharedModule, ExerciseRoutingModule],
 })
 export class ExerciseModule {}

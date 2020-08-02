@@ -1,0 +1,8 @@
+<label for="search">Search:</label>
+<input type="text" id="search" [formControl]="search" />
+
+<ul>
+  <li *ngFor="let suggestion of suggestions$ | async">
+    <a [routerLink]="suggestion.url"> {{ suggestion.value }} </a>
+  </li>
+</ul>
