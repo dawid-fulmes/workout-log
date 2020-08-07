@@ -1,0 +1,33 @@
+@import "src/styles/constants.scss";
+
+$border-color: darken($main-bg-color, 10%);
+$border-thickness: 0.05rem;
+
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+  border-radius: 0.5rem;
+  background-color: $primary-bg-color;
+  border: $border-thickness solid $border-color;
+}
+
+a {
+  display: block;
+  padding: 0 0.5rem;
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  text-decoration: none;
+  line-height: 2;
+  border-bottom: $border-thickness solid $border-color;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $emphasis-color;
+  }
+}
+
+li:last-child a {
+  border-bottom: none;
+}

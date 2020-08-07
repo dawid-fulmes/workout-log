@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let suggestion of suggestions$ | async">
+    <a [routerLink]="suggestion.url"> {{ suggestion.value }} </a>
+  </li>
+</ul>

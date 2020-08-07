@@ -27,7 +27,8 @@ export class ExercisesBrowserComponent implements OnInit, AfterViewInit {
       tap((value) => this.handleQueryParams(value)),
       distinctUntilChanged(),
       debounceTime(300),
-      switchMap((value) => this.exerciseService.searchExercise$(value))
+      switchMap((value) => this.exerciseService.searchExercise$(value)),
+      tap(console.log)
     );
   }
 
