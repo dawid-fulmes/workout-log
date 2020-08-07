@@ -1,0 +1,19 @@
+:host {
+  display: grid;
+  grid:
+    "header" 1fr
+    "main" 14fr
+    / 1fr;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  max-width: 1024px;
+  width: 95%;
+  margin: 0 auto;
+}
