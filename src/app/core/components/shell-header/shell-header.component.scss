@@ -4,12 +4,14 @@
   display: grid;
   padding: 0 10%;
   height: 100%;
-  align-items: center;
+  place-items: center;
   background-color: $header-bg-color;
   color: $header-text-color;
   border-bottom: 0.2rem solid $emphasis-color;
 }
 
 h1 {
+  max-width: 1024px;
+  width: 100%;
   font-weight: bold;
 }

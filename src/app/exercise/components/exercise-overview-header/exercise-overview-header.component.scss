@@ -1,0 +1,32 @@
+@import "src/styles/constants.scss";
+
+:host {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+button {
+  border: none;
+  background-color: $emphasis-color;
+  color: $header-text-color;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  box-shadow: 0.1rem 0.1rem 5px 0px rgba(0, 0, 0, 0.39);
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    background-color: darken($emphasis-color, 10%);
+  }
+}
+
+h2 {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}

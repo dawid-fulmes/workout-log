@@ -1,7 +1,10 @@
-<h2 [innerHTML]="(exercise$ | async)?.name"></h2>
+<app-exercise-overview-layout>
+  <app-exercise-overview-header
+    header
+    (backButtonClicked)="onBackClick()"
+    [name$]="exerciseName$"
+  ></app-exercise-overview-header>
 
-<div [innerHTML]="(exercise$ | async)?.description"></div>
-
-<img *ngIf="(exercise$ | async)?.image" [src]="(exercise$ | async)?.image" alt="exerciseImage" />
-
-<button (click)="onBackClick()">go back</button>
+  <app-exercise-overview-content content [imageUrl$]="imageUrl$" [description$]="description$">
+  </app-exercise-overview-content>
+</app-exercise-overview-layout>
