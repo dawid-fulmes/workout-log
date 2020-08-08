@@ -1,0 +1,28 @@
+@import "src/styles/constants.scss";
+
+:host ::ng-deep .search-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+  label {
+    font-weight: bold;
+    padding-right: 0.5rem;
+  }
+
+  input {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1rem solid #000;
+    outline: none;
+    transition: border-color 0.2s;
+    flex-shrink: 1;
+
+    &:focus {
+      border-bottom: 0.1rem solid $emphasis-color;
+    }
+  }
+}

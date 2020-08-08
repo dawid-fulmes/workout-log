@@ -1,4 +1,8 @@
-<label for="search">Search:</label>
-<input type="text" id="search" [formControl]="search" />
+<app-app-exercise-browser-layout>
+  <div class="search-field">
+    <label for="search">Search:</label>
+    <input type="text" id="search" [formControl]="search" />
+  </div>
 
-<app-exercise-suggestion-list [suggestions$]="suggestions$"></app-exercise-suggestion-list>
+  <app-exercise-suggestion-list [suggestions$]="suggestions$"></app-exercise-suggestion-list>
+</app-app-exercise-browser-layout>
